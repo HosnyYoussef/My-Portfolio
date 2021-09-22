@@ -1,0 +1,817 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    
+    position: fixed;
+    width: 100%;
+    font-family:sans-serif ;
+    transition: all .5s ease;
+   z-index: 999;
+}
+.navbar.sticky{
+    padding:  0px ;
+    background:crimson;
+}
+.navbar-brand{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    padding-left: 100px;
+}
+.navbar-brand span{
+    color: crimson;
+}
+.navbar.sticky a span{
+    color: white;
+    transition: all .5s ease;
+
+}
+.navbar.sticky .nav-item a:hover{
+    color: rgb(7, 56, 7) !important;
+}
+.nav-link{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: cursive;
+    transition: color 0.5s ease;
+}
+.nav-item a:hover{
+    color: crimson !important;
+}
+.navbar-nav{
+    padding-right: 100px;
+}
+/* home section style */
+section{background-image:linear-gradient(rgba(150, 43, 43, 0.337),rgba(0,0,0,1)) ,url(../images/pexels-photo-58726.jpeg);
+    
+    background-size: cover;
+   background-repeat: no-repeat;
+    background-position: center center ;
+ 
+    height: 100%;
+    width: 100%;
+    }
+    .home{
+        display: flex;
+        height: 100vh;
+        color: white;
+        min-height: 600px ;
+       
+       
+    }
+    .home .home-content{
+        margin: auto 0 auto 100px ;
+    }
+    .home .home-content .text-1{
+    font-size: 27px;
+    font-family: monospace;
+  
+
+    }
+    .home .home-content .text-2{
+        font-size: 75px;
+        font-weight: 600;
+        margin-left: -3px;
+        font-family: monospace;
+       height: auto;
+        
+        }
+
+    .home .home-content .text-3{
+            font-size: 40px;
+            
+            
+            }
+     .home .home-content .text-3 span{
+                color: crimson;
+                font-weight: 600 ;
+            }
+    .home-content .btn{
+        font-size: 20px;
+        font-family: monospace;
+        color: black;
+        font-weight: bolder;
+        margin-top: 20px;
+        border-radius: 6px;
+        border: 2px solid crimson;
+    }
+    .home-content .btn:hover{
+            color: white;
+            background: none;
+    }
+
+/* about section style  */
+.about , .servives ,.skills ,.teams ,.contact,footer{
+    font-family: 'Gill Sans';
+}
+.about .title{
+    position: relative;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: black;
+text-align: center;
+font-size: 40px;
+font-weight: 600;
+padding-top: 50px;
+margin-bottom: 60px;
+padding-bottom: 20px;
+}
+.contact .title{
+    position: relative;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: black;
+text-align: center;
+font-size: 40px;
+font-weight: 600;
+
+margin-bottom: 60px;
+padding-bottom: 20px;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: black;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "Who I am";
+    position: absolute;
+    background: white;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    font-size: 20px;
+    color: crimson;
+    font-weight: bold;
+}
+/* teams title */
+.teams .title{
+    position: relative;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: white;
+text-align: center;
+font-size: 40px;
+font-weight: 600;
+
+margin-bottom: 80px;
+padding-bottom: 20px;
+}
+/* contact section startt */
+.contact .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: black;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact .title::after{
+    content: "get in tough";
+    position: absolute;
+    background:white;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    font-size: 20px;
+    color: crimson;
+    font-weight: bold;
+}
+
+/* services title */
+.services .title{
+    position: relative;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: black;
+text-align: center;
+font-size: 40px;
+font-weight: 600;
+
+margin-bottom: 80px;
+padding-bottom: 20px;
+}
+.skills .title{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    
+    margin-bottom: 80px;
+    padding-bottom: 20px;
+}
+.skills .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: black;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.skills .title::after{
+    content: "What I Know";
+    position: absolute;
+    background:white;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    font-size: 20px;
+    color: crimson;
+    font-weight: bold;
+}
+.services .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: white;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.services .title::after{
+    content: "What I Provide";
+    position: absolute;
+    background:#343a40;;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    font-size: 20px;
+    color: crimson;
+    font-weight: bold;
+}
+.teams .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: white;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.teams .title::after{
+    content: "Who with me";
+    position: absolute;
+    background:#343a40;;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    color: crimson;
+    font-weight: bold;
+}
+.teams .carousel{
+    display: flex;
+  
+
+}
+.teams .carousel .card2{
+  
+ 
+    background-color: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin: 40px;
+
+}
+.teams .carousel .card2:hover{
+    background-color: crimson;
+}
+.teams .carousel .card2:hover img{
+    border-color: white;
+}
+.teams .carousel .card2:hover .text{
+    color: black;
+}
+.teams .carousel .card2 .text{
+    font-weight: bold;
+    font-size: 30px;
+    color: crimson;
+}
+.teams .carousel .card2 p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.teams .carousel .card2 img{
+width: 150px;
+height: 150px;
+object-fit: cover;
+border-radius: 50%;
+border:5px solid crimson ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.column-left img{
+    
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 50px ;
+    margin-bottom: 50px;
+   
+}
+
+.about .about-content,
+ .services .serv-content,
+ .skills .skills-content,.contact .contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about .about-content .column-left{
+    width: 40%;
+}
+.about .about-content .column-right{
+    width: 55%;
+    padding-right: 155px;
+}
+.about .about-content .column-right .text{
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: 600;
+}
+ .column-right p{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: cursive;
+    text-align: justify;
+}
+
+.column-right span{
+    color: crimson;
+}
+.column-right  .btn{
+    transition: all .6s ease;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: monospace;
+   margin-bottom: 20px;
+}
+.column-right  .btn:hover{
+    color: crimson;
+    background: none;
+}
+
+.max-width{
+    padding: 80px;
+   
+}
+/* services section style  */
+.services .serv-content .card1{
+    width: calc(33% - 30px);
+   background-color: #222;
+   text-align: center;
+   border-radius: 6px;
+   padding: 20px 25px;
+   cursor: pointer;
+   transition: all .3s ease;
+
+}
+.services .serv-content .card1 i{
+    font-size: 50px;
+    color: crimson;
+}
+.services .serv-content .card1 .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7 0;
+}
+.services .serv-content .card1 .box{
+    transition: all .3s ease;
+}
+.services .serv-content .card1:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card1:hover {
+    background-color: crimson;
+}
+.services .serv-content .card1:hover i{
+    color: white;
+}
+
+/* skills section styling */
+.skills .skills-content .column-left{
+    width: calc(50% - 30px);
+    text-align: justify;
+}
+.skills .skills-content .column-left p{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.skills .skills-content .column1-right{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .column1-right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .column1-right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.skills .skills-content .column1-right span{
+    font-weight: 500;
+    font-size: 20px;
+    font-family: monospace;
+}
+.skills .skills-content .column1-right .line{
+    height: 12px;
+    width: 100%;
+    background-color: lightgray;
+    position: relative;
+}
+.skills .skills-content .column1-right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0px;
+    top: 0;
+    background-color: crimson;
+}
+.skills .skills-content .column1-right .html::before{
+    width: 90%;
+}
+.skills .skills-content .column1-right .css::before{
+    width: 90%;
+}
+.skills .skills-content .column1-right .bootstrap::before{
+    width: 80%;
+}
+.skills .skills-content .column1-right .javascript::before{
+    width: 60%;
+}
+.skills .skills-content .column1-right .jquery::before{
+    width: 60%;
+}
+.skills-content .column-left .btn{
+   
+  
+    font-weight: bolder;
+    font-family: monospace;
+
+}
+.skills-content .column-left .btn:hover{
+    background:none ;
+    color: crimson;
+    font-weight: bolder;
+    font-family: monospace;
+    transition: all .6 ease;
+
+}
+
+
+.skills .skills-content .column-left .text{
+    font-size: 35px;
+   
+    margin-bottom: 12px;
+    color: crimson;
+}
+
+/* contact styling section  */
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .left p{
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 550;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row1{
+    display: flex;
+    height: 65px;
+    align-items:center ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+.contact .contact-content .row1 .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row1 .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .row1 .info .sub-title{
+    color: #777;
+}
+.contact .contact-content .row1 i{
+    font-size: 25px;
+    color: crimson;
+}
+
+.contact .contact-content .text{
+    font-size: 30px;
+    font-weight:bolder;
+    margin-bottom: 10px;
+}
+.contact  .right form .fields{
+display: flex;
+}
+.contact  .right form .field,
+.contact  .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact  .right form .field input
+,.contact  .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border:1px solid crimson;
+    border-radius: 6px;
+    outline: none;
+    padding:0 15px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.contact  .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact  .right form .name{margin-right: 10px;}
+.contact  .right form .textarea{
+    height: 80px;
+}
+.contact  .right .btn{
+    font-weight: bolder;
+    font-family: monospace;
+    transition: all .6 ease;
+}
+.contact  .right .btn:hover{
+    background:none ;
+    color: crimson;
+    font-weight: bolder;
+    font-family: monospace;
+    transition: all .6 ease;
+    
+
+}
+/* footer section start */
+ footer{
+     background-color: #111;
+     padding:10px 23px ;
+     color: white;
+     text-align: center;
+ }
+ footer span a{
+     color: crimson;
+     text-decoration: none;
+ }
+ footer span a:hover{
+     text-decoration: underline;
+     color: crimson;
+ }
+ .scroll-up-btn{
+position: fixed;
+height:45px;
+width:42px;
+background-color: crimson;
+right: 30px;
+bottom: 10px;
+text-align: center;
+line-height: 45px;
+color: #fff;
+z-index: 9999;
+font-size: 30px;
+border-radius: 6px;
+cursor: pointer;
+transition:all .5 ease;
+ }
+
+
+@media (max-width:1000px){
+    .max-width{
+        padding: 20px;
+    
+    }
+   
+    .home .home-content{
+        margin: auto 0 auto 50px ;
+    }
+    .navbar-brand{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        font-size: 30px;
+        padding-left: 30px;
+    }
+}
+/* media for skills ,teams */
+@media (max-width:690px){
+    .skills .skills-content .column-left{
+        width: 100%;
+        text-align: justify;
+    }
+    .skills .skills-content .column1-right{
+        width: 100%;
+    }
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .skills-content .column-left .btn {
+     
+        margin-bottom: 50px;
+        margin-top: 10px;
+    }
+    .skills .skills-content .column-left .text {
+        text-align: left;
+    }
+  
+  
+   
+}
+@media (max-width:1209px){
+    .skills .skills-content .column-left .text {
+        font-size: 32px;
+    }
+    .teams .carousel{
+        display: block;
+      
+    }
+    .teams .carousel .card2{
+     margin: 40px;
+    }
+    .teams .carousel .card2 .text{
+        font-size: 30px;
+        font-family: monospace;
+        font-weight: bold;
+        color: crimson;
+    }
+ 
+}
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* meadia card1  */
+@media (max-width:730px){
+    .services .serv-content .card1{
+        width: 100%;
+    }
+}   
+@media (max-width:947px)   {
+    .services .serv-content .card1{
+        width: calc(50% -10px );
+        margin-bottom:20px ;
+    }
+}
+@media (max-width:1232px){
+    .navbar{
+        position: fixed;
+        width: 100%;
+        font-family:sans-serif ;
+    }
+    @media (max-width:1350px){
+        .column-left img{
+    
+            height: 350px;
+            width: 350px;
+           
+        }
+    }
+   .navbar-toggler{
+       background-color: black;
+   }
+   .collapse{
+       background-color: black
+   }
+    .home-content{padding-top: 55px;}
+  
+   
+   .home .home-content .text-2{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: monospace;
+   height: auto;
+   padding-top:45px;
+    }
+
+     .home .home-content .text-3{
+        font-size: 30px;
+        }
+        .home-content .btn{
+            color: white;
+            background: none;
+        }
+        .about .about-content .column-left .column-right{
+            width:55%;
+           
+
+        }
+        .about .about-content{
+            display: inline-block;
+            text-align: left;
+            align-items: center;
+          
+            
+        }
+        .about .about-content .column-right{
+            width: 55%;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+        .about .about-content .column-left{
+            width: 100%;
+            height: 80%;
+            
+        }
+        .about .about-content .column-right{
+            width: 100%;
+           
+        }
+        .column-right p{
+            font-size: 15px;
+            font-weight: 300;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: unset;
+        }
+        .about .about-content .column-right .text{
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 700;
+           
+        }
+        .services .title::after{
+            content: "What I Provide";
+            position: absolute;
+            background: #343a40;
+           
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 5px;
+            font-size: 18px;
+            color: crimson;
+            font-weight: bold;
+        }
+        .max-width .title{
+            font-size: 40px;
+          
+        }
+        
+};
